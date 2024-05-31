@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <ul id="todoList">
+      <li>Get Eggs</li>
+    </ul>
+    <label for="todo">
+      <h3>New To-Do</h3>
+    </label>
+    <input type="text" id="todo" name="todo" placeholder="Write your To-Do here">
+    <button id="addTodo">Add</button>
+
+    <script>
+        document.getElementById('addTodo').addEventListener('click', function() {
+          var todoInput = document.getElementById('todo');
+          var todoText = todoInput.value;
+          if (todoText !== '') {
+            var li = document.createElement('li');
+            li.textContent = todoText;
+            document.getElementById('todoList').appendChild(li);
+            todoInput.value = ''; // Reset input field
+          }
+        });
+      </script>
+      
+  </body>
+</html>

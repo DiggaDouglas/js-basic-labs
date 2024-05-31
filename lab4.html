@@ -1,0 +1,30 @@
+<html>
+ <head>
+   <title>Accessing Multiple Elements</title>
+ </head>
+ <body>
+   <h1>Lorem Ipsum</h1>
+   <p class="red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat
+     iaculis nunc eget varius.Nullam lacus quam, pellentesque a dictum sed, mollis id tortor.
+      Duis ac vehicula enim. Sed nec sem quis risus pharetra porta eu a risus. Cras tempor sollicitudin metus.
+     Quisque quis sodales mauris.</p>
+   <p>Etiam mattis neque nisi, sit amet ullamcorper est finibus vulputate.
+     Morbi id cursus est. Nunc vestibulum diam quis orci ultrices rhoncus.
+      In scelerisque velit faucibus, mattis leo eu, sollicitudin lacus. Integer posuere molestie facilisis.
+       Praesent sem ligula, sollicitudin vitae arcu a, tristique porttitor ligula.</p>
+   <h2 class="red">Ut Sollicitudin</h2>
+   <p>Ut sollicitudin, nisl aliquet tristique auctor, nibh nibh imperdiet dui, ut condimentum est quam id tellus.
+     Etiam ac nisi vel neque aliquet molestie. Ut non suscipit urna. Integer luctus suscipit tellus, eu suscipit lorem commodo in.
+      Quisque odio risus, sodales ut volutpat nec, vestibulum quis elit. Pellentesque massa nisi, dapibus eget tempor eu, gravida sed nisi.</p>
+   <p class="red">Etiam pharetra, ante eget porta auctor, nisi massa finibus odio, et dapibus sem elit nec purus. 
+    Aenean ut risus ut velit blandit tristique. Nunc quis ullamcorper ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+     Aliquam sed ex pharetra, consectetur nunc ac, laoreet nisl. Fusce sed iaculis orci.</p>
+
+     <script>
+        var elements = document.getElementsByClassName('red');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.color = 'blue';
+        }
+      </script>
+ </body>
+</html>

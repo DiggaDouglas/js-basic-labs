@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Color Button</title>
+</head>
+<body>
+  <button id="colorButton">Click me!</button>
+
+  <script>
+    // Random color generator function
+    var randomColor = function() {
+      var rvalue = function() {
+        return Math.round(Math.random() * 255);
+      }
+      return 'rgb(' + rvalue() + "," + rvalue() + "," + rvalue() + ")";
+    }
+
+    // Get button element from DOM
+    var button = document.querySelector('button');
+
+    // Create event listener to change background color on button click
+    button.onclick = function() {
+      this.style.backgroundColor = randomColor();
+    }
+  </script>
+</body>
+</html>
